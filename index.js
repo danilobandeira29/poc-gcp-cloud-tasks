@@ -10,7 +10,7 @@ async function createHttpTask(req) {
     const {PROJECT, QUEUE, LOCATION} = process.env
     const parent = client.queuePath(PROJECT, LOCATION, QUEUE);
     // TODO(developer): uncomment the line bellow and uses ngrok to call this api in the path POST /handler or uses another url
-    const url = 'https://ef4b-177-107-22-3.sa.ngrok.io/handler';
+    // const url = 'https://ef4b-177-107-22-3.sa.ngrok.io/handler';
     const payload = JSON.stringify({
         contact: {
             email: req.email,
